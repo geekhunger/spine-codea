@@ -7,8 +7,6 @@
 	<key>Buffer Order</key>
 	<array>
 		<string>Main</string>
-		<string>Lfs</string>
-		<string>Spine</string>
 	</array>
 	<key>Description</key>
 	<string>No description available</string>
