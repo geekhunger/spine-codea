@@ -17,7 +17,6 @@ function setup()
     goblin:setSkin("goblin")
     goblin:setAnimation("walk", true) -- loop one animation
     
-    --[[
     local spineboy = spine.Actor(lfs.DROPBOX.."/spine-data", "spineboy.json", "spineboy.atlas")
     spineboy:setScale(.5)
     spineboy:queueAnimation("walk")
@@ -25,11 +24,10 @@ function setup()
     spineboy:queueAnimation("shoot")
     spineboy:queueAnimation("shoot")
     spineboy:queueAnimation("walk", true)
-    --]]
     
     table.insert(actors, raptor)
     table.insert(actors, goblin)
-    --table.insert(actors, spineboy)
+    table.insert(actors, spineboy)
     table.insert(actors, spine.Actor(lfs.DROPBOX.."/spine-data", "alien.json", "alien.atlas"))
     table.insert(actors, spine.Actor(lfs.DROPBOX.."/spine-data", "tank.json", "tank.atlas"))
     

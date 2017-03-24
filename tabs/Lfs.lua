@@ -68,6 +68,11 @@ function lfs.write(file, content)
 end
 
 
+function lfs.append(file, content)
+    -- TODO: use for log files?
+end
+
+
 function lfs.read_binary(file)
     local DIR, FILE, EXT = lfs.breadcrumbs(file)
     local data = io.open(string.format("%s/%s", DIR, FILE..EXT), "rb")
